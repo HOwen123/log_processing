@@ -21,7 +21,6 @@ public class StudentDaoTest {
         student.setName("haowen");
         student.setAge(12);
         student.setSex("nan");
-
         studentDao.saveStudent(student);
     }
 

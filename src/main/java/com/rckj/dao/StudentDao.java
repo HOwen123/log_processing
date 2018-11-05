@@ -20,8 +20,7 @@ public class StudentDao {
     public Student findStudentByStudentName(String name){
         Query query = new Query(Criteria.where("name").is(name));
         Student student = mongoTemplate.findOne(query,Student.class);
-        return  student;
+        return student;
     }
-
 
 }
